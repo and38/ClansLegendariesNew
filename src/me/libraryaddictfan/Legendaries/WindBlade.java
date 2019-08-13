@@ -120,7 +120,7 @@ public class WindBlade extends Legendary {
 								(float) Math.max(0F, (GetCharge(p) - CHARGE_COST)));
 					}
 					p.setVelocity(veccs.get(p.getName()));
-					p.getWorld().playSound(p.getLocation(), Sound.FIZZ, 1.2F, 1.5F);
+					p.getWorld().playSound(p.getLocation(), Sound.FIRE, 1.2F, 2F);
 				}
 
 			} else {
@@ -241,7 +241,7 @@ public class WindBlade extends Legendary {
 			} else {
 				groundCounts.put(p.getName(), groundCounts.get(p.getName())+1);
 				if (UtilGeneric.onGround(p)) {
-					p.playSound(p.getLocation(), Sound.valueOf("LAVA_POP"), 13, 2);
+					p.playSound(p.getLocation(), Sound.valueOf("NOTE_HAT"), 13, 2);
 				}
 			}
 
@@ -258,7 +258,7 @@ public class WindBlade extends Legendary {
 
 		Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(getMain(), () -> {
 			if (UtilGeneric.onGround(p)) {
-				p.playSound(p.getLocation(), Sound.valueOf("LAVA_POP"), 13, 2);
+				p.playSound(p.getLocation(), Sound.valueOf("NOTE_HAT"), 13, 2);
 			}
 			for (Player pl : Bukkit.getServer().getOnlinePlayers()) {
 				if (pl.getLocation().distance(p.getLocation()) < 64) {
@@ -273,7 +273,7 @@ public class WindBlade extends Legendary {
 
 		Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(getMain(), () -> {
 			if (UtilGeneric.onGround(p)) {
-				p.playSound(p.getLocation(), Sound.valueOf("LAVA_POP"), 13, 2);
+				p.playSound(p.getLocation(), Sound.valueOf("NOTE_HAT"), 13, 2);
 			}
 
 			for (Player pl : Bukkit.getServer().getOnlinePlayers()) {
