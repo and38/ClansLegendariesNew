@@ -1,7 +1,7 @@
 name: ClansLegendaries
 main: me.libraryaddictfan.ClansLegendaries
 version: 1.4
-authors: [None Really]
+authors: [and38, SlightlySavage]
 commands:
    legendary:
       description: Gives a Legendary
